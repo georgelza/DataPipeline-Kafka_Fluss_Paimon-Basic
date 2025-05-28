@@ -162,6 +162,8 @@ See below for version information.
 
 - [Apache Parquet File format](https://parquet.apache.org)
 
+- [Hadoop Distributed File System / HDFS](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)
+
 
 ## Misc Notes
 
