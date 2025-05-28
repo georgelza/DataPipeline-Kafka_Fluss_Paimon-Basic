@@ -258,10 +258,6 @@ This blog would not have been possible without the assistance of people, 2 that 
         Head of Fluss and Flink SQL at Alibaba Cloud (Ververica) | PMC member and Committer of Apache Flink
         https://www.linkedin.com/in/jarkwu/
 
-    Dian Fu
-        Senior Technical Specialist at Alibaba Cloud
-        https://www.linkedin.com/in/dian-fu-07797493/
-
 
 ### By:
 
