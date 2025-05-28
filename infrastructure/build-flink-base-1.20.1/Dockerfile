@@ -2,6 +2,10 @@
 FROM arm64v8/flink:1.20.1-scala_2.12-java17
 SHELL ["/bin/bash", "-c"]
 
+# https://github.com/apache/flink/tree/master/flink-python/pyflink/examples
+# To install the apache-flink python package a ful openjdk 17 distribution is required.
+# This is specially applicable to running the container/environment on ARM based platforms
+# like Apple ARM based MacbookPro's. 
 RUN echo "--> Install some useful tools (openjdk-17-jdk-headless required on ARM platforms to enable installation of apache-flink)" \
     && build_deps="neovim tree lnav unzip gradle python3-pip python3.10-venv openjdk-17-jdk-headless" \
     && apt-get update \
@@ -9,11 +13,11 @@ RUN echo "--> Install some useful tools (openjdk-17-jdk-headless required on ARM
 
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
 
-# https://github.com/apache/flink/tree/master/flink-python/pyflink/examples
+# Install apache-flink package centrally.
 RUN echo "--> Install apache-flink && jupyter package" \
     && /usr/bin/pip3 install apache-flink==1.20.1 jupyter
 
-
+# Cleanup time, we can now remove the large openjdk-17 distribution
 RUN echo "--> Cleanup time" \
     && apt-get remove -y openjdk-17-jdk-headless 
 
