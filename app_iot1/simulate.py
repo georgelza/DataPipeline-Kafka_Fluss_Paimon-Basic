@@ -387,7 +387,7 @@ def run_simulation(site, current_time, config_params):
             start                     = str(step1starttime.strftime("%Y-%m-%d %H:%M:%S.%f")),
             end                       = str(step1endtime.strftime("%Y-%m-%d %H:%M:%S.%f")),
             runtime                   = str(round(step1time, 4)),
-            historical_record_counte  = historical_record_counter,
+            historical_record_counter = historical_record_counter,
             histrate                  = histrate
         ))
     # end if
