@@ -144,9 +144,6 @@ See below for version information.
 
 ## Projects / Components
 
-- [Apache Flink](https://flink.apache.org)
-
-- [Ververica](https://www.ververica.com)
 
 - [What is Fluss](https://alibaba.github.io/fluss-docs/)
 
@@ -155,8 +152,14 @@ See below for version information.
 - [What is Fluss docs](https://alibaba.github.io/fluss-docs/docs/intro/)
 
 - [Fluss Project Git Repo](https://github.com/alibaba/fluss)
+    
+    Do take not of the existence of the Fluss Java SDK.
 
 - [Introduction to Fluss](https://www.ververica.com/blog/introducing-fluss)
+
+- [Apache Flink](https://flink.apache.org)
+
+- [Ververica](https://www.ververica.com)
 
 - [Apache Paimon](https://paimon.apache.org)
 
